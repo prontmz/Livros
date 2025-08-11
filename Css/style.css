@@ -1,0 +1,47 @@
+  :root {
+            --primary-color: #009688;
+            --secondary-color: #FFC107;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('moçambique-school.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .class-card {
+            border: none;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .class-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .class-card-header {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+        .subject-badge {
+            background-color: var(--secondary-color);
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+        }
