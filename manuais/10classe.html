@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../manuais/Css/classes.css">
     <style>
-        
+        .book-cover {
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            background-color: #f8f9fa;
+            width: 100%;
+        }
+        .download-btn {
+            width: 100%;
+        }
+        .subject-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .manual-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
@@ -42,7 +63,7 @@
     <section class="class-header">
         <div class="container">
             <h1 class="mb-3">Manuais Escolares - 10ª Classe</h1>
-            <p class="lead mb-0">Visualize e baixe todos os manuais disponíveis</p>
+            <p class="lead mb-0">Baixe todos os manuais disponíveis</p>
         </div>
     </section>
 
@@ -50,7 +71,7 @@
     <div class="container mb-5">
         <div class="row">
             <!-- Geografia -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="subject-card">
                     <div class="subject-header">
                         <h4 class="mb-0"><i class="bi bi-globe2"></i> Geografia</h4>
@@ -60,186 +81,151 @@
                         <h5>Manual de Geografia</h5>
                         <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 180 páginas</p>
                         
-                        <div class="pdf-container">
-                            <iframe src="https://drive.google.com/file/d/14u2emnKygGxaOEtZFTVSp2TKfNn-sPTC/view?usp=drive_link" frameborder="0"></iframe>
-                        </div>
+                        <img src="geo.webp" alt="Capa do Manual de Geografia" class="book-cover">
                         
-                        <div class="d-flex justify-content-between">
-                            <a href="https://drive.google.com/file/d/14u2emnKygGxaOEtZFTVSp2TKfNn-sPTC/view?usp=drive_link" class="download-btn" download>
-                                <i class="bi bi-download"></i> Baixar
-                            </a>
-                            <a href="https://drive.google.com/file/d/14u2emnKygGxaOEtZFTVSp2TKfNn-sPTC/view?usp=drive_link" target="_blank" class="view-btn">
-                                <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/file/d/14u2emnKygGxaOEtZFTVSp2TKfNn-sPTC/view?usp=drive_link" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
 
-<!-- Física -->
-<div class="col-md-6 col-lg-4">
-    <div class="subject-card">
-        <div class="subject-header">
-            <h4 class="mb-0"><i class="bi bi-atom"></i> Física</h4>
-            <span class="subject-badge">Ciências Naturais</span>
-        </div>
-        <div class="manual-content">
-            <h5>Manual de Física</h5>
-            <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 195 páginas</p>
-            
-            <div class="pdf-container">
-                <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_2/preview" frameborder="0"></iframe>
-            </div>
-            
-            <div class="d-flex justify-content-between">
-                <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_2" class="download-btn" download>
-                    <i class="bi bi-download"></i> Baixar
-                </a>
-                <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_2/preview" target="_blank" class="view-btn">
-                    <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Química -->
-<div class="col-md-6 col-lg-4">
-    <div class="subject-card">
-        <div class="subject-header">
-            <h4 class="mb-0"><i class="bi bi-flask"></i> Química</h4>
-            <span class="subject-badge">Ciências Naturais</span>
-        </div>
-        <div class="manual-content">
-            <h5>Manual de Química</h5>
-            <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 175 páginas</p>
-            
-            <div class="pdf-container">
-                <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_3/preview" frameborder="0"></iframe>
-            </div>
-            
-            <div class="d-flex justify-content-between">
-                <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_3" class="download-btn" download>
-                    <i class="bi bi-download"></i> Baixar
-                </a>
-                <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_3/preview" target="_blank" class="view-btn">
-                    <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Biologia -->
-<div class="col-md-6 col-lg-4">
-    <div class="subject-card">
-        <div class="subject-header">
-            <h4 class="mb-0"><i class="bi bi-flower2"></i> Biologia</h4>
-            <span class="subject-badge">Ciências Naturais</span>
-        </div>
-        <div class="manual-content">
-            <h5>Manual de Biologia</h5>
-            <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 160 páginas</p>
-            
-            <div class="pdf-container">
-                <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_4/preview" frameborder="0"></iframe>
-            </div>
-            
-            <div class="d-flex justify-content-between">
-                <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_4" class="download-btn" download>
-                    <i class="bi bi-download"></i> Baixar
-                </a>
-                <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_4/preview" target="_blank" class="view-btn">
-                    <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- História -->
-<div class="col-md-6 col-lg-4">
-    <div class="subject-card">
-        <div class="subject-header">
-            <h4 class="mb-0"><i class="bi bi-hourglass-split"></i> História</h4>
-            <span class="subject-badge">Humanidades</span>
-        </div>
-        <div class="manual-content">
-            <h5>Manual de História</h5>
-            <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 200 páginas</p>
-            
-            <div class="pdf-container">
-                <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_5/preview" frameborder="0"></iframe>
-            </div>
-            
-            <div class="d-flex justify-content-between">
-                <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_5" class="download-btn" download>
-                    <i class="bi bi-download"></i> Baixar
-                </a>
-                <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_5/preview" target="_blank" class="view-btn">
-                    <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Língua Portuguesa -->
-<div class="col-md-6 col-lg-4">
-    <div class="subject-card">
-        <div class="subject-header">
-            <h4 class="mb-0"><i class="bi bi-book"></i> Língua Portuguesa</h4>
-            <span class="subject-badge">Linguagens</span>
-        </div>
-        <div class="manual-content">
-            <h5>Manual de Português</h5>
-            <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 185 páginas</p>
-            
-            <div class="pdf-container">
-                <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_6/preview" frameborder="0"></iframe>
-            </div>
-            
-            <div class="d-flex justify-content-between">
-                <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_6" class="download-btn" download>
-                    <i class="bi bi-download"></i> Baixar
-                </a>
-                <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_6/preview" target="_blank" class="view-btn">
-                    <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-            
-<!-- Ingles -->
-            <div class="col-md-6 col-lg-4">
+            <!-- Física -->
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="subject-card">
                     <div class="subject-header">
-                        <h4 class="mb-0"><i class="bi bi-calculator"></i> Lingua Inglesa</h4>
+                        <h4 class="mb-0"><i class="bi bi-atom"></i> Física</h4>
+                        <span class="subject-badge">Ciências Naturais</span>
+                    </div>
+                    <div class="manual-content">
+                        <h5>Manual de Física</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 195 páginas</p>
+                        
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_2&sz=w400" alt="Capa do Manual de Física" class="book-cover">
+                        
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_2" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Química -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4 class="mb-0"><i class="bi bi-flask"></i> Química</h4>
+                        <span class="subject-badge">Ciências Naturais</span>
+                    </div>
+                    <div class="manual-content">
+                        <h5>Manual de Química</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 175 páginas</p>
+                        
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_3&sz=w400" alt="Capa do Manual de Química" class="book-cover">
+                        
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_3" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biologia -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4 class="mb-0"><i class="bi bi-flower2"></i> Biologia</h4>
+                        <span class="subject-badge">Ciências Naturais</span>
+                    </div>
+                    <div class="manual-content">
+                        <h5>Manual de Biologia</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 160 páginas</p>
+                        
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_4&sz=w400" alt="Capa do Manual de Biologia" class="book-cover">
+                        
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_4" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- História -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4 class="mb-0"><i class="bi bi-hourglass-split"></i> História</h4>
+                        <span class="subject-badge">Humanidades</span>
+                    </div>
+                    <div class="manual-content">
+                        <h5>Manual de História</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 200 páginas</p>
+                        
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_5&sz=w400" alt="Capa do Manual de História" class="book-cover">
+                        
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_5" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Língua Portuguesa -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4 class="mb-0"><i class="bi bi-book"></i> Língua Portuguesa</h4>
                         <span class="subject-badge">Linguagens</span>
                     </div>
                     <div class="manual-content">
-                        <h5>Manual de Ingles</h5>
-                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição!<i class="bi bi-file-text"></i> </p>
+                        <h5>Manual de Português</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 185 páginas</p>
                         
-                        <div class="pdf-container">
-                            <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_7/preview" frameborder="0"></iframe>
-                        </div>
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_6&sz=w400" alt="Capa do Manual de Português" class="book-cover">
                         
-                        <div class="d-flex justify-content-between">
-                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_7" class="download-btn" download>
-                                <i class="bi bi-download"></i> Baixar
-                            </a>
-                            <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_7/preview" target="_blank" class="view-btn">
-                                <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_6" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Inglês -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4 class="mb-0"><i class="bi bi-translate"></i> Língua Inglesa</h4>
+                        <span class="subject-badge">Linguagens</span>
+                    </div>
+                    <div class="manual-content">
+                        <h5>Manual de Inglês</h5>
+                        <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023</p>
+                        
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_7&sz=w400" alt="Capa do Manual de Inglês" class="book-cover">
+                        
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_7" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Matemática -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="subject-card">
                     <div class="subject-header">
                         <h4 class="mb-0"><i class="bi bi-calculator"></i> Matemática</h4>
@@ -249,23 +235,18 @@
                         <h5>Manual de Matemática</h5>
                         <p class="text-muted small mb-3"><i class="bi bi-calendar"></i> Edição 2023 | <i class="bi bi-file-text"></i> 245 páginas</p>
                         
-                        <div class="pdf-container">
-                            <iframe src="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_8/preview" frameborder="0"></iframe>
-                        </div>
+                        <img src="https://drive.google.com/thumbnail?id=ID_DA_IMAGEM_8&sz=w400" alt="Capa do Manual de Matemática" class="book-cover">
                         
-                        <div class="d-flex justify-content-between">
-                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_8" class="download-btn" download>
-                                <i class="bi bi-download"></i> Baixar
-                            </a>
-                            <a href="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_8/preview" target="_blank" class="view-btn">
-                                <i class="bi bi-arrows-fullscreen"></i> Tela Cheia
+                        <div class="mt-auto">
+                            <a href="https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO_8" class="btn btn-primary download-btn" download>
+                                <i class="bi bi-download"></i> Baixar Manual
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
+        </div>
+    </div>
 
     <!-- Rodapé -->
     <footer class="footer">
@@ -291,7 +272,6 @@
                         <li><a href="#">Política de Privacidade</a></li>
                     </ul>
                 </div>
-                
             </div>
             <hr>
             <div class="text-center">
