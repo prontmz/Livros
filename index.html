@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuais Escolares - Moçambique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        :root {
+            --primary-color: #009688;
+            --secondary-color: #FFC107;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('moçambique-school.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .class-card {
+            border: none;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .class-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .class-card-header {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+        .subject-badge {
+            background-color: var(--secondary-color);
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Manuais Escolares</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactos">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Manuais Escolares para Moçambique</h1>
+            <p class="lead">Acesso gratuito a manuais escolares da 1ª à 12ª classe</p>
+            <a href="#classes" class="btn btn-warning btn-lg mt-3">Explorar Manuais</a>
+        </div>
+    </section>
+
+    <!-- Seção de Classes -->
+    <section id="classes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Selecione a sua Classe</h2>
+            <div class="row">
+                <!-- 1ª a 6ª Classe (Ensino Primário) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card class-card">
+                        <div class="card-header class-card-header text-center">
+                            <h3>1ª - 6ª Classe</h3>
+                            <p>Ensino Primário</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="manuais/1classe.html">1ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/2classe.html">2ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/3classe.html">3ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/4classe.html">4ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/5classe.html">5ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/6classe.html">6ª Classe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7ª a 10ª Classe (Ensino Secundário 1º Ciclo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card class-card">
+                        <div class="card-header class-card-header text-center">
+                            <h3>7ª - 10ª Classe</h3>
+                            <p>Ensino Secundário (1º Ciclo)</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="manuais/7classe.html">7ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/8classe.html">8ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/9classe.html">9ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/10classe.html">10ª Classe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11ª e 12ª Classe (Ensino Secundário 2º Ciclo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card class-card">
+                        <div class="card-header class-card-header text-center">
+                            <h3>11ª - 12ª Classe</h3>
+                            <p>Ensino Secundário (2º Ciclo)</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="manuais/11classe.html">11ª Classe</a></li>
+                                <li class="list-group-item"><a href="manuais/12classe.html">12ª Classe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemplo de página de uma classe -->
+    <section id="exemplo-classe" class="py-5 bg-light" style="display: none;">
+        <div class="container">
+            <h2 class="text-center mb-4">Manuais da 10ª Classe</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Matemática</h5>
+                            <p class="card-text">Manual de Matemática para 10ª classe - Edição 2023</p>
+                            <span class="badge subject-badge mb-2">Ciências Exatas</span>
+                            <div class="d-grid gap-2">
+                                <a href="manuais/10/matematica.pdf" class="btn btn-primary" download>Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Língua Portuguesa</h5>
+                            <p class="card-text">Manual de Português para 10ª classe - Edição 2023</p>
+                            <span class="badge subject-badge mb-2">Línguas</span>
+                            <div class="d-grid gap-2">
+                                <a href="manuais/10/portugues.pdf" class="btn btn-primary" download>Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">História</h5>
+                            <p class="card-text">Manual de História para 10ª classe - Edição 2023</p>
+                            <span class="badge subject-badge mb-2">Ciências Sociais</span>
+                            <div class="d-grid gap-2">
+                                <a href="manuais/10/historia.pdf" class="btn btn-primary" download>Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sobre o Projecto</h2>
+                    <p>Este site foi criado com o objectivo de disponibilizar manuais escolares de forma gratuita a todos os alunos moçambicanos, da 1ª à 12ª classe.</p>
+                    <p>Acreditamos que o acesso à educação é um direito fundamental e que a disponibilidade de materiais didáticos não deve ser uma barreira para o aprendizado.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="moçambique-students.jpg" alt="Alunos moçambicanos" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contactos -->
+    <section id="contactos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacte-nos</h2>
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <h4>Informações de Contacto</h4>
+                    <p><i class="bi bi-envelope"></i> <strong>Email:</strong> info@manuaismoz.org</p>
+                    <p><i class="bi bi-phone"></i> <strong>Telefone:</strong> +258 84 123 4567</p>
+                    <p><i class="bi bi-geo-alt"></i> <strong>Endereço:</strong> Av. 25 de Setembro, nº 123, Maputo, Moçambique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2023 Manuais Escolares Moçambique. Todos os direitos reservados.</p>
+            <p>Desenvolvido com ❤️ para os estudantes moçambicanos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Exemplo de JavaScript para funcionalidades adicionais
+        document.addEventListener('DOMContentLoaded', function() {
+            // Aqui pode adicionar interações como carregamento dinâmico dos manuais
+            console.log('Site carregado com sucesso!');
+        });
+    </script>
+</body>
+</html>
